@@ -12,6 +12,7 @@
   "defaultScriptType": 0,
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -21,6 +22,7 @@
   },
   "resources": [
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
+    {"id":{"name":"spr_menu_obj","path":"sprites/spr_menu_obj/spr_menu_obj.yy",},},
     {"id":{"name":"scr_menu","path":"scripts/scr_menu/scr_menu.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},

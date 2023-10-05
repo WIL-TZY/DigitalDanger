@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings": [
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
+    {"name":"Sprites","order":17,"path":"folders/Sprites.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"Note1","order":16,"path":"notes/Note1/Note1.yy",},
