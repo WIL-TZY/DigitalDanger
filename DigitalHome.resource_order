@@ -1,8 +1,12 @@
 {
   "FolderOrderSettings": [
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
+    {"name":"Objects_1","order":17,"path":"folders/Objects_1.yy",},
+    {"name":"parte_1","order":1,"path":"folders/Objects_1/parte_1.yy",},
+    {"name":"Sprite_inventario","order":18,"path":"folders/Sprite_inventario.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"spr_inventario_selector","order":1,"path":"sprites/spr_inventario_selector/spr_inventario_selector.yy",},
     {"name":"Note1","order":16,"path":"notes/Note1/Note1.yy",},
   ],
 }
