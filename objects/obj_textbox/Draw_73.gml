@@ -1,5 +1,5 @@
 
-textbox_x = camera_get_view_x( view_camera[0] ) - 32;
+textbox_x = camera_get_view_x( view_camera[0] );
 textbox_y = camera_get_view_y( view_camera[0] ) + 144;
 
 
@@ -151,35 +151,33 @@ if global.PRESSED_CONFIRM
 	//if the typing is done
 	if draw_char == text_length[page]
 		{
-			
+			show_debug_message("next page");
 		//next page
 		if page < page_number-1
 		{
+			show_debug_message("next page2");
 		page++;
 		draw_char = 0;
 		}
 		// destroy textbox
-		else
-			{
+		else{
 			//link text for options
 			if option_number > 0 {
 				create_textbox(option_link_id[option_pos]);
-				}
-			instance_destroy();
 			}
-				
+		}
+			// Closes current instance
+			global.textbox_active = false;
+			close_dialog_box(id);
 		}
 	//if not done typing
 	else
 		{
-			
-		draw_char = text_length[page]
+			if draw_char > 1 {
+				draw_char = text_length[page];	
+			}
 		
 		}
-	
-	
-	
-	
 	
 	}
 
@@ -214,7 +212,7 @@ if draw_char == text_length[page] && page == page_number - 1
 	{
 		
 	// option selection - programing-wise, the option is now selected but needs a visual indicator (the arrow).
-	option_pos += global.PRESSED_DOWN - global.PRESSED_UP;
+	option_pos += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
 	option_pos = clamp(option_pos, 0, option_number-1);
 
 	// draw the options

@@ -29,8 +29,11 @@ switch(_text_id) {
 				
 				
 //------------------------------------ CONVERSATION 1 ----------------------------------------//
-		case "tv":
-			scr_text("I guess that's a TV.");
+		case "door":
+			scr_text("I guess that's a door.");
+			scr_text("Llalalalala");
+			scr_text("Llalalalala");
+			scr_text("Llalalalala");
 			break;
 			
 			

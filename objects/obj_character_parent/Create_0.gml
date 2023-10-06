@@ -18,6 +18,8 @@ target_x = x;
 target_y = y;
 dir = 270;
 
+image_index = 0;
+
 //changing sprites in ALL characters that inherit from this
 get_sprite = function (dir) { // anon function that is stored inside get_sprite method variable
 	if (dir == 0) return state.right;

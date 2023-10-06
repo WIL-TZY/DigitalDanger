@@ -9,6 +9,7 @@ randomize();
 #region GAME VARIABLES
 global.pause = false;
 global.ovwrd_menu = false;
+global.textbox_active = false;
 //global.AI_grid;
 // global.money = 20;
 // global.player_can_warp = true;

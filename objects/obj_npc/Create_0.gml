@@ -23,4 +23,5 @@ states = {
 
 state = states.idle;
 
-interacted = false;
+is_npc = true;
+//interacted = false;

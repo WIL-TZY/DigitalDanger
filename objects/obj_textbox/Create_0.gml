@@ -1,9 +1,9 @@
 depth = -9999;
 
 //textbox parameters
-textbox_width = 300;
-textbox_height = 74;
-border = 12;
+textbox_width = 200;
+textbox_height = 64;
+border = 8;
 line_sep = 12;
 line_width = textbox_width - border*2;
 txtb_spr[0] = spr_textbox;
@@ -25,12 +25,13 @@ option[0] = "";
 option_link_id[0] = -1;
 option_pos = 0;
 option_number = 0;
+text_x_offset[page] = 80;
 
 setup = false;
 
 // SOUND
 snd_delay = 4;
-snd_count = snd_delay;
+snd_count = snd_off;
 
 // EFFECTS
 scr_set_defaults_for_text();

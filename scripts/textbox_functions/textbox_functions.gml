@@ -124,15 +124,26 @@ function scr_option(_option, _link_id) {
 }
 
 
-
-
-
 /// @param text_id
 function create_textbox(_text_id) {
+	// Pause player movement
+	global.pause = true;
 	
-	with( instance_create_depth(0, 0, -9999, obj_textbox) )
-		{
-		scr_game_text(_text_id);
+	var textbox_inst = instance_create_layer(0, 0, "textbox", obj_textbox);
+	with (textbox_inst) {
+			scr_game_text(_text_id);
 		}
-		
+		return textbox_inst;
 }
+
+
+function close_dialog_box(_textbox_inst) { //-----------> Call this instead of just instance_destroy()
+	instance_destroy(_textbox_inst);
+	
+	// Resume world
+	global.pause = false;
+	
+	// Clear confirm key input
+	global.PRESSED_CONFIRM = false;
+}
+
