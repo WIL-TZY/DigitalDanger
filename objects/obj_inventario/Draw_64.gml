@@ -22,6 +22,15 @@ if inventario == true {
 		if point_in_rectangle(_mx, _my, _slotsx, _slotsy, _slotsx + tamanho_slots, _slotsy + tamanho_slots) {
 			draw_sprite_ext(spr_inventario_selector, 0, _slotsx, _slotsy, escala, escala, 0, c_white, 1);
 		}
+		
+		
+		// desenhar sprites de itens
+		if grid_items[# Infos.Item, i] != -1{
+			draw_sprite_ext(spr_items, grid_items[# 0, i], _slotsx, _slotsy, escala, escala, 0, c_white, 1);
+			
+			draw_set_halign(fa_center);
+			draw_text_color(_slotsx + tamanho_slots, _slotsy + tamanho_slots - 8, grid_items[# Infos.Quantidade, i], c_white, c_white, c_white, c_white, 1);
+		}
 	
 		ix++;
 		if ix >= slots_h {

@@ -11,9 +11,9 @@
   },
   "defaultScriptType": 1,
   "Folders": [
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects_1","folderPath":"folders/Objects_1.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"parte_1","folderPath":"folders/Objects_1/parte_1.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprite_inventario","folderPath":"folders/Sprite_inventario.yy",},
   ],
   "IncludedFiles": [],
@@ -25,6 +25,7 @@
   "resources": [
     {"id":{"name":"obj_inventario","path":"objects/obj_inventario/obj_inventario.yy",},},
     {"id":{"name":"spr_inventario","path":"sprites/spr_inventario/spr_inventario.yy",},},
+    {"id":{"name":"spr_items","path":"sprites/spr_items/spr_items.yy",},},
     {"id":{"name":"spr_inventario_selector","path":"sprites/spr_inventario_selector/spr_inventario_selector.yy",},},
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
