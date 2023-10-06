@@ -102,6 +102,3 @@ repeat(array_len){
 }
 
 inputting = false; //when inputting is true, it means the selection was made and we can start changing settings
-
-//scale = 1; // For interactivity
-scale = 1;

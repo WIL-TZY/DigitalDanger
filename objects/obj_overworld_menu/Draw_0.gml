@@ -2,7 +2,7 @@ if (!global.ovwrd_menu) {
 exit;
 }
 
-//draw_set_font(global.font_main);
+draw_set_font(global.font_main);
 
 //// This return the res.scale
 // var scale_factor = min(global.view_width / 320, global.view_height / 240);
@@ -44,17 +44,12 @@ var yy = 0; repeat(ds_height){
 	xo = 0;
 
 	if(yy == menu_option[page]) {
-		 scale = lerp(scale, 1.4, 0.15); // The selected option grows in scale
-		 //scale[page] = round(lerp(scale[page], 1.4, 0.15));
 		c = c_fuchsia;
 		xo = -(x_BUFFER/2); // This makes it so that the selected option starts a bit more to the left compared to the other options		
 	}
-	else {
-		scale = lerp(scale, 1, 0.15);
-		//scale[page] = round(lerp(scale[page], 1, 0.15));
-	}
+
 	//the string is the y = 0 of the ds_grid
-	draw_text_transformed_color(ltx+xo, lty, ds_grid[# 0, yy], scale, scale, 0, c, c, c, c, 1);
+	draw_text_transformed_color(ltx+xo, lty, ds_grid[# 0, yy], 1, 1, 0, c, c, c, c, 1);
 	//TO ACCOUNT FOR SCALING, COULD ALSO USE:
 	//draw_text_transformed(x, y, text, scale_factor, scale_factor, 0);
 	//OR

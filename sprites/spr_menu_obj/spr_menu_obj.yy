@@ -87,8 +87,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "spr_menu_elements",
-    "path": "folders/Sprites/spr_menu_elements.yy",
+    "name": "DigitalHome",
+    "path": "DigitalHome.yyp",
   },
   "preMultiplyAlpha": false,
   "sequence": {
