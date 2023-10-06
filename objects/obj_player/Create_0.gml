@@ -22,9 +22,3 @@ player_data = new char_data();
 state = player_data.states.idle;
 
 facing = DOWN;
-
-//#region MAGIC MENU
-
-//show_magic_menu = false;
-
-//#endregion MAGIC MENU

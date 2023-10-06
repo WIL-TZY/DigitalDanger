@@ -13,3 +13,4 @@ if layer_get_visible(lay_id2)
     layer_set_visible(lay_id2, false);
 }
 */
+

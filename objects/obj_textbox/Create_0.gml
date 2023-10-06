@@ -1,8 +1,8 @@
 depth = -9999;
 
 //textbox parameters
-textbox_width = 200;
-textbox_height = 64;
+textbox_width = 300;
+textbox_height = 74;
 border = 8;
 line_sep = 12;
 line_width = textbox_width - border*2;
