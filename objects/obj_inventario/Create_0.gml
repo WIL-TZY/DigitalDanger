@@ -10,7 +10,6 @@ y_start = 24 * escala;
 
 
 // slots
-
 slots_h = 5;
 slots_w = 5;
 
@@ -41,18 +40,17 @@ enum Craftaveis {
 
 enum Infos {
 	Item, 
-	Quantidade,
 	Sprite,
-	Altura
+	Altura,
 }
 
 grid_items = ds_grid_create(Infos.Altura, total_slots);
 ds_grid_set_region(grid_items, 0, 0, Infos.Altura - 1, total_slots - 1, -1);
 
-ds_grid_add_item(Armas.Disk, 3, spr_items);
-ds_grid_add_item(Armas.Drive, 2, spr_items);
-ds_grid_add_item(Armas.CD, 6, spr_items);
+ds_grid_add_item(Armas.Disk, spr_items);
+ds_grid_add_item(Armas.Drive, spr_items);
+ds_grid_add_item(Armas.CD, spr_items);
 
-ds_grid_add_item(Craftaveis.Malware, 5, spr_craftaveis);
-ds_grid_add_item(Craftaveis.Antivirus, 2, spr_craftaveis);
-ds_grid_add_item(Craftaveis.Dados, 9, spr_craftaveis);
+ds_grid_add_item(Craftaveis.Malware, spr_craftaveis);
+ds_grid_add_item(Craftaveis.Antivirus, spr_craftaveis);
+ds_grid_add_item(Craftaveis.Dados, spr_craftaveis);

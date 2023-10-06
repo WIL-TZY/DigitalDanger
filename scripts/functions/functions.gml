@@ -2,7 +2,6 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function ds_grid_add_item(){
 	// @arg Item
-	// @arg Quantidade
 	// @arg Sprite
 	
 	var _grid = obj_inventario.grid_items;
@@ -14,5 +13,4 @@ function ds_grid_add_item(){
 	
 	_grid[# 0, _checagem] = argument[0];
 	_grid[# 1, _checagem] = argument[1];
-	_grid[# 2, _checagem] = argument[2];
 }
