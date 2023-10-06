@@ -17,4 +17,5 @@ states = {
 	}
 }
 
+is_npc = true;
 state = states.idle;

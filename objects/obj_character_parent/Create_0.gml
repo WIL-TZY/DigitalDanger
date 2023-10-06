@@ -11,7 +11,7 @@ input_y = 0;
 //sprite_offset = 0; ---> set on variable definitions
 
 //Movement
-move_spd = 1;
+move_spd = 3
 moving = false;
 //move_direction = 0; //declared in variable definitions
 target_x = x;

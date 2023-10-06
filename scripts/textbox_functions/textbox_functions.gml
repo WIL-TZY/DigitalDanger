@@ -137,6 +137,7 @@ function create_textbox(_text_id) {
 }
 
 
+/*
 function close_dialog_box(_textbox_inst) { //-----------> Call this instead of just instance_destroy()
 	instance_destroy(_textbox_inst);
 	
@@ -144,6 +145,6 @@ function close_dialog_box(_textbox_inst) { //-----------> Call this instead of j
 	global.pause = false;
 	
 	// Clear confirm key input
-	global.PRESSED_CONFIRM = false;
+	//global.PRESSED_CONFIRM = false;
 }
-
+/*

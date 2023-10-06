@@ -161,14 +161,24 @@ if global.PRESSED_CONFIRM
 		}
 		// destroy textbox
 		else{
-			//link text for options
-			if option_number > 0 {
-				create_textbox(option_link_id[option_pos]);
+			//link text for options (review, it's buggy)
+			if option_number > 0 && options_inst = noone {
+				options_inst = create_textbox(option_link_id[option_pos]); // Gets a new array of dialogues (relative to the option chosen)
+				
+				// Closes the og textbox, the current one is a new instance for the options text
+				// Resume world
+				global.pause = false;
+				instance_destroy();
 			}
 		}
 			// Closes current instance
 			global.textbox_active = false;
-			close_dialog_box(id);
+			if (page == page_number - 1) {
+				// Resume world
+				global.pause = false;
+				instance_destroy();
+			}
+
 		}
 	//if not done typing
 	else
