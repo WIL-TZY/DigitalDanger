@@ -4,6 +4,7 @@
     {"name":"parte_1","order":1,"path":"folders/Objects_1/parte_1.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
     {"name":"Sprite_inventario","order":18,"path":"folders/Sprite_inventario.yy",},
+    {"name":"Scripts","order":19,"path":"folders/Scripts.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_items","order":2,"path":"sprites/spr_items/spr_items.yy",},

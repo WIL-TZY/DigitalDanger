@@ -15,6 +15,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"parte_1","folderPath":"folders/Objects_1/parte_1.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprite_inventario","folderPath":"folders/Sprite_inventario.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Scripts","folderPath":"folders/Scripts.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -23,6 +24,7 @@
     "IDEVersion": "2023.6.0.92",
   },
   "resources": [
+    {"id":{"name":"functions","path":"scripts/functions/functions.yy",},},
     {"id":{"name":"obj_inventario","path":"objects/obj_inventario/obj_inventario.yy",},},
     {"id":{"name":"spr_inventario","path":"sprites/spr_inventario/spr_inventario.yy",},},
     {"id":{"name":"spr_items","path":"sprites/spr_items/spr_items.yy",},},

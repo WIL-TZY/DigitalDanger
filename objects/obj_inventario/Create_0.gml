@@ -31,24 +31,28 @@ enum Armas {
 	Altura
 }
 
+// nomes sujeitos a mudanca
+enum Craftaveis {
+	Dados,
+	Malware,
+	Antivirus,
+	Altura
+}
+
 enum Infos {
 	Item, 
 	Quantidade,
+	Sprite,
 	Altura
 }
 
 grid_items = ds_grid_create(Infos.Altura, total_slots);
-ds_grid_set_region(grid_items, 0, 0, 1, total_slots - 1, -1);
+ds_grid_set_region(grid_items, 0, 0, Infos.Altura - 1, total_slots - 1, -1);
 
-// primeiro slots
-grid_items[# Infos.Item, 0] = Armas.Drive;
-grid_items[# Infos.Quantidade, 0] =  3;
+ds_grid_add_item(Armas.Disk, 3, spr_items);
+ds_grid_add_item(Armas.Drive, 2, spr_items);
+ds_grid_add_item(Armas.CD, 6, spr_items);
 
-grid_items[# Infos.Item, 1] = Armas.Disk;
-grid_items[# Infos.Quantidade, 1] =  5;
-
-grid_items[# Infos.Item, 2] = Armas.CD;
-grid_items[# Infos.Quantidade, 2] =  7;
-
-grid_items[# Infos.Item, 3] = Armas.Disk;
-grid_items[# Infos.Quantidade, 3] =  9;
+ds_grid_add_item(Craftaveis.Malware, 5, spr_craftaveis);
+ds_grid_add_item(Craftaveis.Antivirus, 2, spr_craftaveis);
+ds_grid_add_item(Craftaveis.Dados, 9, spr_craftaveis);
