@@ -8,6 +8,7 @@ randomize();
 
 #region GAME VARIABLES
 global.pause = false;
+global.ovwrd_menu = false;
 //global.AI_grid;
 // global.money = 20;
 // global.player_can_warp = true;
@@ -23,7 +24,12 @@ global.rm_current = room_get_name(room);
 
 #endregion ROOMS
 
-/*
+#region AUDIOGROUPS
+audio_group_load(audiogroup_music);
+audio_group_load(audiogroup_sfx);
+
+#endregion AUDIOGROUPS
+
 #region CAMERA
 global.is_fullscreen = false;
 global.camera_id = -1;
@@ -36,7 +42,7 @@ global.res = { // See menu_functions script
 	scale: 1 //1 ---> 320x240 (default)
 }
 #endregion CAMERA
-*/
+
 
 #region SETUP INPUTS & CONTROLS
 //held
