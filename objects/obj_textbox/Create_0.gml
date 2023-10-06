@@ -3,7 +3,7 @@ depth = -9999;
 //textbox parameters
 textbox_width = 300;
 textbox_height = 74;
-border = 8;
+border = 12;
 line_sep = 12;
 line_width = textbox_width - border*2;
 txtb_spr[0] = spr_textbox;

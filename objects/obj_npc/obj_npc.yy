@@ -1,17 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_random_prop",
+  "name": "obj_npc",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Room Objects",
-    "path": "folders/Objects/Room Objects.yy",
+    "name": "AI",
+    "path": "folders/Objects/AI.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_npc_parent",
+    "path": "objects/obj_npc_parent/obj_npc_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_placeholder",
-    "path": "sprites/spr_placeholder/spr_placeholder.yy",
+    "name": "spr_npc_idle_down",
+    "path": "sprites/spr_npc_idle_down/spr_npc_idle_down.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -12,16 +12,16 @@ if (is_player = true) {
 
 #region Direction
 
-if move_dir = 0 {
+if move_direction = 0 {
 	facing = RIGHT;
 }
-else if move_dir = 90 {
+else if move_direction = 90 {
 	facing = UP;
 }
-else if move_dir = 180 {
+else if move_direction = 180 {
 	facing = LEFT;
 }
-else if move_dir = 270 {
+else if move_direction = 270 {
 	facing = DOWN;
 }
 

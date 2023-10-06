@@ -1,7 +1,7 @@
 // Pause
 if (global.pause) {
 	set_state(states.idle);
-	sprite_index = get_sprite(move_dir);
+	sprite_index = get_sprite(move_direction);
 	exit; // rest of step code doesn't run in this case
 }
 	
@@ -34,7 +34,7 @@ if (!global.pause) {
 			}
 			else {
 				// If there are collisions, at least face in that direction
-				move_dir = point_direction(0, 0, input_x, input_y);
+				move_direction = point_direction(0, 0, input_x, input_y);
 			}
 		}
 	}
@@ -62,11 +62,11 @@ if (!global.pause) {
 			y += sign(target_y - y) * move_spd; //... how much the chara needs to move to get to the target_x
 		
 			//finding which sprite to change based on direction
-			move_dir = point_direction(x, y, target_x, target_y);
+			move_direction = point_direction(x, y, target_x, target_y);
 			/*
 			if (global.HELD){
 				//finding which sprite to change based on direction
-				move_dir = point_direction(x, y, target_x, target_y);
+				move_direction = point_direction(x, y, target_x, target_y);
 			}
 			*/
 	
@@ -84,7 +84,7 @@ if (!global.pause) {
 		//set_state(states.idle);
 	}
 
-	sprite_index = get_sprite(move_dir);
+	sprite_index = get_sprite(move_direction);
 
 	#endregion 2ND PART - MOVE TO TARGET POSITION / STOP MOVEMENT
 	

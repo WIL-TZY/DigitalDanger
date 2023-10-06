@@ -15,7 +15,7 @@ is_player = true;
 // based on if they're player or followers, they'll run a certain step code
 
 // Variable definitions
-// move_dir = 270;
+// move_direction = 270;
 // sprite_offset = 8;
 player_data = new char_data();
 

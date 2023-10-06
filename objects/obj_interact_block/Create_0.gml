@@ -1,1 +1,1 @@
-text_id = "";
+event_inherited();

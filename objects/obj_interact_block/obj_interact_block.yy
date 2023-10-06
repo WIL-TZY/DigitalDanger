@@ -4,7 +4,6 @@
   "name": "obj_interact_block",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -12,7 +11,10 @@
     "name": "Dialogue System",
     "path": "folders/Objects/Dialogue System.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_npc_parent",
+    "path": "objects/obj_npc_parent/obj_npc_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

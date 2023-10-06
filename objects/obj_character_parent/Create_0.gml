@@ -4,7 +4,6 @@ SetDepth(0); // Determines DepthID of each instance
 // Entity
 is_player = false;
 is_npc = false;
-has_shadow = true;
 
 //Input
 input_x = 0;
@@ -14,7 +13,7 @@ input_y = 0;
 //Movement
 move_spd = 1;
 moving = false;
-//move_dir = 0; //declared in variable definitions
+//move_direction = 0; //declared in variable definitions
 target_x = x;
 target_y = y;
 dir = 270;

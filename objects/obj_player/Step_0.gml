@@ -45,12 +45,12 @@ if (is_player) {
 					}
 					else{ 
 					//makes it so the character changes faces if helding button even if couldn't move due to pressure levels
-					move_dir = point_direction(0, 0, input_x, input_y);
+					move_direction = point_direction(0, 0, input_x, input_y);
 					}
 				}
 				else {
 					// If there are collisions, at least face in that direction
-					move_dir = point_direction(0, 0, input_x, input_y);
+					move_direction = point_direction(0, 0, input_x, input_y);
 				}
 			}
 		}
@@ -78,11 +78,11 @@ if (is_player) {
 				y += sign(target_y - y) * move_spd; //... how much the chara needs to move to get to the target_x
 		
 				//finding which sprite to change based on direction
-				move_dir = point_direction(x, y, target_x, target_y);
+				move_direction = point_direction(x, y, target_x, target_y);
 				/*
 				if (global.HELD){
 					//finding which sprite to change based on direction
-					move_dir = point_direction(x, y, target_x, target_y);
+					move_direction = point_direction(x, y, target_x, target_y);
 				}
 				*/
 	
@@ -107,7 +107,7 @@ if (is_player) {
 			set_state(player_data.states.idle);
 		}
 
-		sprite_index = get_chara_sprite(id, move_dir);
+		sprite_index = get_chara_sprite(id, move_direction);
 
 		#endregion 2ND PART - MOVE TO TARGET POSITION / STOP MOVEMENT
 	
@@ -118,7 +118,7 @@ if (is_player) {
 
 } // end of if (is_player)
 
-/*
+
 #region NPC interaction
 
 // Check for the cell where player is facing and trying to find a NPC there
@@ -180,26 +180,16 @@ if ((npc_inst != noone) && (!instance_exists(obj_textbox))) {
     // NPC found, do something
 	
 	// Speech Bubble stuff
-	if (npc_inst.npc_type == e_npc_types.speaker) { // Instance is a speaker NPC
+	if (npc_inst.is_npc == true) { // Instance is a speaker NPC
 		npc_inst.show_speech_bubble = true;
 	} 
-	else {	// Instance is an interactable or silent NPC
-		npc_inst.show_speech_bubble = false;
-	}
-	
-	// Activate encounter if instance is a fightable NPC
-	if (global.PRESSED_CONFIRM && (npc_inst.has_speech_bubble == true && npc_inst.npc_type == e_npc_types.opponent) && (!instance_exists(obj_dialog_box)) ) {
-		// Start an encounter with said NPC
-		new_encounter(npc_inst.battle_id);
-	}
 	
     // Activate dialogue if instance is an NPC and has a speech bubble, OR if it is an instance of obj_interaction
-	if (global.PRESSED_CONFIRM && ( (npc_inst.has_speech_bubble == true && npc_inst.npc_type == e_npc_types.speaker) || npc_inst.npc_type == e_npc_types.interactable) && (!instance_exists(obj_dialog_box)) ) {
-		textbox_inst = create_dialog_box(npc_inst.default_dialogue);
+	if ( global.PRESSED_CONFIRM && ( (npc_inst.has_speech_bubble && !instance_exists(obj_textbox)) ) ) {
+		textbox_inst = create_textbox(npc_inst.default_dialogue);
 		
 		// Make NPC face the player
-		npc_inst.move_dir = point_direction(npc_inst.x, npc_inst.y, x, y);
+		npc_inst.move_direction = point_direction(npc_inst.x, npc_inst.y, x, y);
 	}
 }
 #endregion NPC interaction
-*/
