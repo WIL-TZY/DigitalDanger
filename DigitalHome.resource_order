@@ -9,5 +9,6 @@
     {"name":"spr_items","order":2,"path":"sprites/spr_items/spr_items.yy",},
     {"name":"spr_inventario_selector","order":1,"path":"sprites/spr_inventario_selector/spr_inventario_selector.yy",},
     {"name":"Note1","order":16,"path":"notes/Note1/Note1.yy",},
+    {"name":"spr_craftaveis","order":3,"path":"sprites/spr_craftaveis/spr_craftaveis.yy",},
   ],
 }

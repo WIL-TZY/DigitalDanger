@@ -28,6 +28,7 @@
     {"id":{"name":"spr_items","path":"sprites/spr_items/spr_items.yy",},},
     {"id":{"name":"spr_inventario_selector","path":"sprites/spr_inventario_selector/spr_inventario_selector.yy",},},
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
+    {"id":{"name":"spr_craftaveis","path":"sprites/spr_craftaveis/spr_craftaveis.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [

@@ -21,6 +21,50 @@ if inventario == true {
 		
 		if point_in_rectangle(_mx, _my, _slotsx, _slotsy, _slotsx + tamanho_slots, _slotsy + tamanho_slots) {
 			draw_sprite_ext(spr_inventario_selector, 0, _slotsx, _slotsy, escala, escala, 0, c_white, 1);
+			
+			// agarra item e soltar em outro slot
+			if mouse_check_button_pressed(mb_left) {
+				// caso nao tenha item selecionado
+				if item_selecionado == -1 {
+					item_selecionado = grid_items[# Infos.Item, i];
+					pos_selecionado = i;
+				}// caso tenha item selecionado
+				else {
+					// 1- caso o item selecionado seja igual o item que deseja trocar
+					if item_selecionado == grid_items[# Infos.Item, i] and pos_selecionado != i {
+						grid_items[# Infos.Quantidade, i] += grid_items[# Infos.Quantidade, pos_selecionado];
+						
+						grid_items[# Infos.Item, pos_selecionado] = -1;
+						grid_items[# Infos.Quantidade, pos_selecionado] = -1;
+						
+						item_selecionado = -1;
+						pos_selecionado = -1;
+					}// 2- caso o slot selecionado seja vazio
+					else if grid_items[# Infos.Item, i] == -1 {
+						grid_items[# Infos.Item, i] = grid_items[# Infos.Item, pos_selecionado];
+						grid_items[# Infos.Quantidade,  i] = grid_items[# Infos.Quantidade, pos_selecionado];
+						
+						grid_items[# Infos.Item, pos_selecionado] = -1;
+						grid_items[# Infos.Quantidade, pos_selecionado] = -1;
+						
+						item_selecionado = -1;
+						pos_selecionado = -1;
+					}// 3- caso o slot selecionado ja tenha um item 
+					else if grid_items[# Infos.Item, pos_selecionado] != grid_items[# Infos.Item, i] {
+						var _item = grid_items[# Infos.Item, i];
+						var _quantidade = grid_items[# Infos.Quantidade, i];
+						
+						grid_items[# Infos.Item, i] = grid_items[# Infos.Item, pos_selecionado];
+						grid_items[# Infos.Quantidade,  i] = grid_items[# Infos.Quantidade, pos_selecionado];
+						
+						grid_items[# Infos.Item, pos_selecionado] = _item;
+						grid_items[# Infos.Quantidade, pos_selecionado] = _quantidade;
+						
+						item_selecionado = -1;
+						pos_selecionado = -1;
+					}
+				}
+			}
 		}
 		
 		
@@ -37,6 +81,16 @@ if inventario == true {
 			ix = 0;
 			iy ++;
 		}
+	}
+	
+	// larga o item selecionado
+	if mouse_check_button_pressed(mb_right) {
+		item_selecionado = -1;
+		pos_selecionado = -1;
+	}
+	
+	if item_selecionado != -1 {
+		draw_sprite_ext(spr_items, item_selecionado, _mx, _my, escala, escala, 0, c_white, 0.5);
 	}
 }
 

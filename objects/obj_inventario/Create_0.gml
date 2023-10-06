@@ -21,6 +21,9 @@ buffer = 1 * escala;
 inventario_w = sprite_get_width(spr_inventario) * escala;
 inventario_h = sprite_get_height(spr_inventario) * escala;
 
+item_selecionado = -1;
+pos_selecionado = -1;
+
 enum Armas {
 	Drive,
 	Disk,
