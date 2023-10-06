@@ -19,7 +19,7 @@ function scr_menu_keyboard()
 			obj_selection_keyboard.selection = 1	
 		}
 		
-		else if obj_selection_keyboard.selection > 1
+		else if obj_selection_keyboard.selection > 2
 		{
 			obj_selection_keyboard.selection = 0	
 		}
@@ -57,6 +57,18 @@ function scr_menu_keyboard()
 					if position_meeting(self.x,self.y,obj_selection_2_exit) and keyboard_check_pressed(vk_enter)
 					{
 					game_end();	
+					}
+					
+				break;
+				
+				case 2:
+				//move to obj_2 position
+					self.x = obj_selection_3_testemini.x
+					self.y = obj_selection_3_testemini.y
+					
+					if position_meeting(self.x,self.y,obj_selection_3_testemini) and keyboard_check_pressed(vk_enter)
+					{
+					room_goto(rm_minigame);	
 					}
 					
 				break;
