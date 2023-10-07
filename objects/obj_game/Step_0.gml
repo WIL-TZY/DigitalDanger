@@ -4,6 +4,18 @@ if (keyboard_check_pressed(ord("Q"))) {
 	global.debug = !global.debug;	
 }
 
+if (global.debug) {
+	if (keyboard_check_pressed(ord("R"))) {
+		game_restart();
+	}
+}
+
+// Impedir abertura do menu de inventário
+//if (room == rm_title || room == rm_end || room == rm_minigame) {
+//	global.pause = true; 
+//}
+
+
 // FLAGS
 if (global.flag_counter >= 3) {
 	audio_play_sound(snd_static, 100, false);

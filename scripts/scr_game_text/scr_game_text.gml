@@ -37,7 +37,7 @@ switch(_text_id) {
 				var _nome = obj_item.nome;
 				scr_text($"Voce encontrou um {_nome}!");
 				scr_text($"Voce guardou {_nome} no seu inventario.");
-				ds_grid_add_item(Armas.Drive, spr_items);
+				ds_grid_add_item(Armas.PCB, spr_itens);
 				global.flag_counter++;
 				global.flag[0] = true;
 			}
@@ -68,8 +68,8 @@ switch(_text_id) {
 			if (global.flag[1] == false) {
 				var _nome = obj_item.nome;
 				scr_text($"Voce encontrou um {_nome}!");
-				scr_text($"Voce guardou {_nome} no seu inventario.");
-				ds_grid_add_item(Armas.Disk, spr_items);
+				scr_text($"Voce guardou no seu inventario.");
+				ds_grid_add_item(Armas.Antena, spr_itens);
 				global.flag_counter++;
 				global.flag[1] = true;
 			}
@@ -80,8 +80,8 @@ switch(_text_id) {
 			if (global.flag[2] == false) {
 				var _nome = obj_item.nome;
 				scr_text($"Voce encontrou um {_nome}!");
-				scr_text($"Voce guardou {_nome} no seu inventario.");
-				ds_grid_add_item(Armas.CD, spr_items);
+				scr_text($"Voce guardou no seu inventario.");
+				ds_grid_add_item(Armas.Emissor, spr_itens);
 				global.flag_counter++;
 				global.flag[2] = true;
 			}
@@ -91,9 +91,9 @@ switch(_text_id) {
 		case "item3":
 			if (global.flag[3] == false) {
 				var _nome = obj_item.nome;
-				scr_text($"Voce encontrou um {_nome}!");
-				scr_text($"Voce guardou {_nome} no seu inventario.");
-				ds_grid_add_item(Armas.CD, spr_items);
+				scr_text($"Voce encontrou um componente!");
+				scr_text($"Voce guardou no seu inventario.");
+				ds_grid_add_item(Armas.Cell, spr_itens);
 				global.flag_counter++;
 				global.flag[3] = true;
 			}

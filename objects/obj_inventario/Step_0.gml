@@ -1,10 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// abrir o inventario 
-if keyboard_check_pressed(ord("I")) {
-	inventario = !inventario;
+
+if (!global.pause && !instance_exists(obj_warp)) {
+	// Abrir o inventario 
+	if (room != rm_title) {
+		if (global.PRESSED_START) {
+			inventario = !inventario;
+		}
+	}
 }
-
-
 

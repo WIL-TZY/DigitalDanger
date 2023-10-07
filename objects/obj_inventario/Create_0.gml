@@ -23,10 +23,10 @@ item_selecionado = -1;
 pos_selecionado = -1;
 
 enum Armas {
-	Drive,		// PCB (0)
-	Disk,		// Antena (1)
-	CD,			// Emissor (2)
-	// EXTRA	// Cell (3)
+	PCB,		// PCB (0)
+	Antena,		// Antena (1)
+	Emissor,	// Emissor (2)
+	Cell,		// Cell (3)
 	Altura		// Jammer (4) ----> final
 			
 }

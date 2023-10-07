@@ -54,21 +54,6 @@ if inventario == true {
 						var _item = grid_items[# Infos.Item, i];
 						var _sprite = grid_items[# Infos.Sprite, i];
 						
-						if grid_items[# Infos.Item, pos_selecionado] == grid_items[# Armas.Drive, pos_selecionado] and grid_items[# Infos.Item, i] == grid_items[# Armas.Disk, i]{
-							show_debug_message(grid_items[# Infos.Item, i]);
-							
-							grid_items[# Infos.Item, i] = grid_items[# 0, Craftaveis.Malware];
-							grid_items[# Infos.Sprite,  i] = grid_items[# 1, spr_craftaveis];
-							
-							show_debug_message(grid_items[# Infos.Sprite, i]);
-							
-							grid_items[# Infos.Item, pos_selecionado] = -1;
-							grid_items[# Infos.Sprite,  pos_selecionado] = -1;
-							
-							item_selecionado = -1;
-							pos_selecionado = -1;
-						}
-						else{
 							// Trocando combinacao de dois itens pelo craftavel
 							grid_items[# Infos.Item, i] = grid_items[# Infos.Item, pos_selecionado];
 							grid_items[# Infos.Sprite,  i] = grid_items[# Infos.Sprite, pos_selecionado];
@@ -79,7 +64,6 @@ if inventario == true {
 						
 							item_selecionado = -1;
 							pos_selecionado = -1;
-						}
 					}
 				}
 			}
