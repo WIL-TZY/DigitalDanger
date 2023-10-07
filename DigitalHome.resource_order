@@ -10,9 +10,9 @@
     {"name":"idle","order":3,"path":"folders/Sprites/idle.yy",},
     {"name":"menu_elements","order":7,"path":"folders/Sprites/menu_elements.yy",},
     {"name":"minigames","order":8,"path":"folders/Sprites/minigames.yy",},
+    {"name":"minigame2","order":5,"path":"folders/Sprites/minigames/minigame2.yy",},
     {"name":"walk","order":4,"path":"folders/Sprites/walk.yy",},
     {"name":"Tilesets","order":6,"path":"folders/Tilesets.yy",},
-    {"name":"minigame2","order":5,"path":"folders/Sprites/minigames/minigame2.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_selection_3_testemini","order":4,"path":"objects/obj_selection_3_testemini/obj_selection_3_testemini.yy",},
@@ -31,6 +31,7 @@
     {"name":"spr_node","order":1,"path":"sprites/spr_node/spr_node.yy",},
     {"name":"spr_ping","order":2,"path":"sprites/spr_ping/spr_ping.yy",},
     {"name":"obj_selection_1_sp","order":1,"path":"objects/obj_selection_1_sp/obj_selection_1_sp.yy",},
+    {"name":"rm_minigame2","order":5,"path":"rooms/rm_minigame2/rm_minigame2.yy",},
     {"name":"Note1","order":1,"path":"notes/Note1/Note1.yy",},
     {"name":"obj_ping","order":3,"path":"objects/obj_ping/obj_ping.yy",},
     {"name":"math_functions","order":2,"path":"scripts/math_functions/math_functions.yy",},
