@@ -21,16 +21,18 @@ if (instance_exists(obj_dialog_box)) {
 */
 
 // If pressed C and player has finished movement
-if ( (global.PRESSED_START) && (obj_player.moving == false) ) { // && (!instance_exists(obj_dialog_box))
-	global.ovwrd_menu = true;
+if (instance_exists(obj_player)) {
+	if ( (global.PRESSED_START) && (obj_player.moving == false) ) { // && (!instance_exists(obj_dialog_box))
+		global.ovwrd_menu = true;
 	
-	if (!instance_exists(obj_overworld_menu)) {
-		overworld_menu_instance = instance_create_depth(x, y, -900, obj_overworld_menu);
+		if (!instance_exists(obj_overworld_menu)) {
+			overworld_menu_instance = instance_create_depth(x, y, -900, obj_overworld_menu);
+		}
+	
+		if instance_exists(obj_overworld_menu){
+			global.pause = true;
+		}	
 	}
-	
-	if instance_exists(obj_overworld_menu){
-		global.pause = true;
-	}	
 }
 
 #endregion (OVERWORLD) MENU

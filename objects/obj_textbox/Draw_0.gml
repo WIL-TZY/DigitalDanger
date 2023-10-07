@@ -152,11 +152,11 @@ if global.PRESSED_CONFIRM
 	//if the typing is done
 	if draw_char == text_length[page]
 		{
-			show_debug_message("next page");
+			//show_debug_message("next page1");
 		//next page
 		if page < page_number-1
 		{
-			show_debug_message("next page2");
+			//show_debug_message("next page2");
 		page++;
 		draw_char = 0;
 		}

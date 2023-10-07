@@ -12,6 +12,7 @@ switch(_text_id) {
 			scr_text("Vejo que voce esta fazendo um bom trabalho.");
 			// Dá o item
 			scr_text("Isso aqui vai te ajudar.");
+			scr_text("");
 			break;	
 //------------------------------------ CONVERSATION 1 ----------------------------------------//
 		case "door":
@@ -19,7 +20,13 @@ switch(_text_id) {
 			break;
 //------------------------------------ CONVERSATION 2 ----------------------------------------//
 		case "painel1":
-			scr_text("Tzzzt.");
+			if (global.flag[1] == false) {
+				scr_text("Tzzzt.");
+			}
+
+			if (global.flag[1] == true) {
+				room_goto(rm_minigame);
+			}
 			break;
 //------------------------------------ CONVERSATION 3 ----------------------------------------//
 		case "item1":
