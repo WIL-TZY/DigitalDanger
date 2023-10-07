@@ -21,6 +21,7 @@ if (instance_exists(obj_dialog_box)) {
 */
 
 // If pressed C and player has finished movement
+/*
 if (instance_exists(obj_player)) {
 	if ( (global.PRESSED_START) && (obj_player.moving == false) ) { // && (!instance_exists(obj_dialog_box))
 		global.ovwrd_menu = true;
@@ -34,7 +35,7 @@ if (instance_exists(obj_player)) {
 		}	
 	}
 }
-
+*/
 #endregion (OVERWORLD) MENU
 
 

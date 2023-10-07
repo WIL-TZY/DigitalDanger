@@ -27,7 +27,7 @@ enum Armas {
 	Disk,	// Antena (1)
 	CD,		// Emissor (2)
 	Altura // Cell (3)
-			// Jammer (4)
+			// Jammer (4) ----> final
 }
 
 // nomes sujeitos a mudanca
