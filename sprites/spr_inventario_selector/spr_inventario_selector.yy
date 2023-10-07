@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Sprite_inventario",
-    "path": "folders/Sprite_inventario.yy",
+    "name": "spr_inv",
+    "path": "folders/Inventory/spr_inv.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

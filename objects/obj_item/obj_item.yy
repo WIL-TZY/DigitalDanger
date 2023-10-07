@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_items",
-    "path": "sprites/spr_items/spr_items.yy",
+    "name": "spr_itens",
+    "path": "sprites/spr_itens/spr_itens.yy",
   },
   "spriteMaskId": null,
   "visible": true,

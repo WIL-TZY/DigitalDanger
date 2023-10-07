@@ -3,7 +3,7 @@
   "resourceVersion": "1.1",
   "name": "Note1",
   "parent": {
-    "name": "DigitalHome",
-    "path": "DigitalHome.yyp",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
 }

@@ -29,6 +29,7 @@ switch(_text_id) {
 				scr_text($"Voce guardou {_nome} no seu inventario.");
 				global.flag[1] = true;
 			}
+			ds_grid_add_item(Armas.Drive, spr_items);
 			scr_text("");
 			break;
 //--------------------------------------------------------------------------------------------//
