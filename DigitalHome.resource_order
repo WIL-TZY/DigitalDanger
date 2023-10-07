@@ -101,7 +101,7 @@
     {"name":"obj_overworld_menu","order":5,"path":"objects/obj_overworld_menu/obj_overworld_menu.yy",},
     {"name":"obj_room_manager","order":4,"path":"objects/obj_room_manager/obj_room_manager.yy",},
     {"name":"spr_player_idle_left","order":4,"path":"sprites/spr_player_idle_left/spr_player_idle_left.yy",},
-    {"name":"spr_npc_idle_down","order":15,"path":"sprites/spr_npc_idle_down/spr_npc_idle_down.yy",},
+    {"name":"spr_npc","order":15,"path":"sprites/spr_npc/spr_npc.yy",},
     {"name":"obj_warp","order":10,"path":"objects/obj_warp/obj_warp.yy",},
     {"name":"character_functions","order":1,"path":"scripts/character_functions/character_functions.yy",},
     {"name":"obj_selection_3_testemini","order":3,"path":"objects/obj_selection_3_testemini/obj_selection_3_testemini.yy",},

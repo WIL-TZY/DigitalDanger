@@ -145,7 +145,7 @@
     {"id":{"name":"spr_player_idle_left","path":"sprites/spr_player_idle_left/spr_player_idle_left.yy",},},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},},
-    {"id":{"name":"spr_npc_idle_down","path":"sprites/spr_npc_idle_down/spr_npc_idle_down.yy",},},
+    {"id":{"name":"spr_npc","path":"sprites/spr_npc/spr_npc.yy",},},
     {"id":{"name":"obj_warp","path":"objects/obj_warp/obj_warp.yy",},},
     {"id":{"name":"character_functions","path":"scripts/character_functions/character_functions.yy",},},
     {"id":{"name":"obj_selection_3_testemini","path":"objects/obj_selection_3_testemini/obj_selection_3_testemini.yy",},},

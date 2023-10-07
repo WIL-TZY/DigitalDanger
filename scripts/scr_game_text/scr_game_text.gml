@@ -14,11 +14,11 @@ switch(_text_id) {
 			scr_text("Isso aqui vai te ajudar.");
 			scr_text("");
 			break;	
-//------------------------------------ CONVERSATION 1 ----------------------------------------//
+//------------------------------------ CONVERSATION 2 ----------------------------------------//
 		case "door":
 			scr_text("A porta esta trancada.");
 			break;
-//------------------------------------ CONVERSATION 2 ----------------------------------------//
+//------------------------------------ CONVERSATION 3 ----------------------------------------//
 		case "painel1":
 			if (global.flag[1] == false) {
 				scr_text("Tzzzt.");
@@ -28,7 +28,7 @@ switch(_text_id) {
 				room_goto(rm_minigame);
 			}
 			break;
-//------------------------------------ CONVERSATION 3 ----------------------------------------//
+//------------------------------------ CONVERSATION 4 ----------------------------------------//
 		case "item1":
 			if (global.flag[1] == false) {
 				var _nome = obj_item.nome;
@@ -39,6 +39,15 @@ switch(_text_id) {
 			ds_grid_add_item(Armas.Drive, spr_items);
 			scr_text("");
 			break;
+//------------------------------------ CONVERSATION 1 ----------------------------------------//
+		case "npc2":
+			scr_text("Uai, o que foi?");
+			scr_text("Vai dizer que voce tambem nao remexe as latas de lixo?");
+			scr_text("Acaba sempre tendo algo valioso dentro delas~");
+			// Dá o item
+			//scr_text("Isso aqui vai te ajudar.");
+			//scr_text("");
+			break;	
 //--------------------------------------------------------------------------------------------//
 		}
 }
