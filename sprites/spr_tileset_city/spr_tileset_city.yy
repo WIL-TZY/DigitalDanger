@@ -4,7 +4,7 @@
   "name": "spr_tileset_city",
   "bbox_bottom": 143,
   "bbox_left": 0,
-  "bbox_right": 191,
+  "bbox_right": 175,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8ad6f8d6-6b54-4510-af98-5a66fbe56efc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c75bd8ce-ff45-4b20-81b1-969f870487c8",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 144,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ed1362ca-e3f3-4410-a1bc-bf6cbd9ae085","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b8fa1572-5474-4e12-9c9f-e1e79b7b2030","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8ad6f8d6-6b54-4510-af98-5a66fbe56efc","path":"sprites/spr_tileset_city/spr_tileset_city.yy",},},},"Disabled":false,"id":"d9de7ec8-c8e6-4075-9a1e-3e68f3e00ec4","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c75bd8ce-ff45-4b20-81b1-969f870487c8","path":"sprites/spr_tileset_city/spr_tileset_city.yy",},},},"Disabled":false,"id":"921df31f-81a5-4349-8e5f-d6015b556b47","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

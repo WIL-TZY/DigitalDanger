@@ -9,8 +9,7 @@ switch(_text_id) {
 		
 //------------------------------------ CONVERSATION 1 ----------------------------------------//
 		case "npc1":
-		scr_text("Vejo que voce esta fazendo um bom trabalho.");
-			scr_text("...");
+			scr_text("Vejo que voce esta fazendo um bom trabalho.");
 			// Dá o item
 			scr_text("Isso aqui vai te ajudar.");
 			break;	

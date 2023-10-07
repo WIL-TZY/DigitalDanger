@@ -127,6 +127,7 @@ function scr_option(_option, _link_id) {
 /// @param text_id
 function create_textbox(_text_id) {
 	// Pause player movement
+	global.textbox_active = true;
 	global.pause = true;
 	
 	var textbox_inst = instance_create_layer(0, 0, "textbox", obj_textbox);
