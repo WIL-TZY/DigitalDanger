@@ -7,11 +7,11 @@
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_menu_parent","path":"objects/obj_menu_parent/obj_menu_parent.yy",},"propertyId":{"name":"selection_text","path":"objects/obj_menu_parent/obj_menu_parent.yy",},"value":"Start",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_menu_parent","path":"objects/obj_menu_parent/obj_menu_parent.yy",},"propertyId":{"name":"selection_text","path":"objects/obj_menu_parent/obj_menu_parent.yy",},"value":"Inicio",},
   ],
   "parent": {
-    "name": "menu_elements",
-    "path": "folders/Objects/menu_elements.yy",
+    "name": "TitleMenu",
+    "path": "folders/TitleMenu.yy",
   },
   "parentObjectId": {
     "name": "obj_menu_parent",

@@ -110,3 +110,8 @@ function scr_minigame(){
 		break;
 	}
 }
+
+function scr_minigame2()
+{
+	
+}

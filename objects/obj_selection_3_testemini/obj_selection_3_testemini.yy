@@ -6,17 +6,12 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_menu_parent","path":"objects/obj_menu_parent/obj_menu_parent.yy",},"propertyId":{"name":"selection_text","path":"objects/obj_menu_parent/obj_menu_parent.yy",},"value":"Teste minigame",},
-  ],
+  "overriddenProperties": [],
   "parent": {
-    "name": "menu_elements",
-    "path": "folders/Objects/menu_elements.yy",
+    "name": "TitleMenu",
+    "path": "folders/TitleMenu.yy",
   },
-  "parentObjectId": {
-    "name": "obj_menu_parent",
-    "path": "objects/obj_menu_parent/obj_menu_parent.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

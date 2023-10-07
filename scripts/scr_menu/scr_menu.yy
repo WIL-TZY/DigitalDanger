@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "menu_elements",
-    "path": "folders/Sprites/menu_elements.yy",
+    "name": "TitleMenu",
+    "path": "folders/TitleMenu.yy",
   },
 }

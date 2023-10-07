@@ -12,7 +12,7 @@ function scr_menu_keyboard()
 	standard_value = 1
 	switch (room)
 	{
-		case rm_menu:
+		case rm_title:
 		
 		if obj_selection_keyboard.selection < 0
 		{
@@ -24,27 +24,27 @@ function scr_menu_keyboard()
 			obj_selection_keyboard.selection = 0	
 		}
 		
-		if keyboard_check_pressed(vk_down)
+		if (global.PRESSED_DOWN)
 		{
 			obj_selection_keyboard.selection += standard_value
 		}
 		
-		else if keyboard_check_pressed(vk_up)
+		else if (global.PRESSED_UP)
 		{
 			obj_selection_keyboard.selection -= standard_value
 		}
 		
-		with obj_selection_keyboard
+		with (obj_selection_keyboard)
 		{	
-			switch selection
+			switch (selection)
 			{	
 				case 0:
 					self.x = obj_selection_1_sp.x
 					self.y = obj_selection_1_sp.y
 					
-					if position_meeting(self.x,self.y,obj_selection_1_sp) and keyboard_check_pressed(vk_enter)
+					if (position_meeting(self.x,self.y,obj_selection_1_sp) and global.PRESSED_CONFIRM)
 					{
-					room_goto(rm_init);
+					room_goto(rm_first);
 					}
 				
 				break;
@@ -54,7 +54,7 @@ function scr_menu_keyboard()
 					self.x = obj_selection_2_exit.x
 					self.y = obj_selection_2_exit.y
 					
-					if position_meeting(self.x,self.y,obj_selection_2_exit) and keyboard_check_pressed(vk_enter)
+					if (position_meeting(self.x,self.y,obj_selection_2_exit) and global.PRESSED_CONFIRM)
 					{
 					game_end();	
 					}
@@ -62,15 +62,16 @@ function scr_menu_keyboard()
 				break;
 				
 				case 2:
-				//move to obj_2 position
-					self.x = obj_selection_3_testemini.x
-					self.y = obj_selection_3_testemini.y
+					if (global.debug) {
+					//move to obj_2 position
+						self.x = obj_selection_3_testemini.x
+						self.y = obj_selection_3_testemini.y
 					
-					if position_meeting(self.x,self.y,obj_selection_3_testemini) and keyboard_check_pressed(vk_enter)
-					{
-					room_goto(rm_minigame);	
+						if (position_meeting(self.x,self.y,obj_selection_3_testemini) and global.PRESSED_CONFIRM)
+						{
+						room_goto(rm_minigame);	
+						}
 					}
-					
 				break;
 			}
 		}

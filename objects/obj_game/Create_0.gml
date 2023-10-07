@@ -149,12 +149,6 @@ enum e_room_types {
 
 // This global needs to be set in the creation code of every room the obj_player is in
 global.room_type = e_room_types.basic;
-global.last_dungeon_entry_x = 0;
-global.last_dungeon_entry_y = 0;
-
-global.last_inn_room = rm_first;
-global.last_inn_x = 140; //obj_room_marker.x;
-global.last_inn_y = 180; //obj_room_marker.y;
 
 #endregion ROOM TYPES & TRAVELLING
 
@@ -162,23 +156,6 @@ global.last_inn_y = 180; //obj_room_marker.y;
 #endregion ITEMS
 
 #region INVENTORY
-
-//global.inventory_slots = 15; //32
-
-/*
-enum e_inv_stats{
-	item_id, // based on the item index
-	equipped, // true/false - only weapons or armors can be equipped
-	charges, // everytime it's used it's gonna lose 1 until reaching 0. Unlimited uses are set to -1
-	last
-}
-
-// Setting inventory slots to empty
-for (var slot = 0; slot < global.inventory_slots; slot++){
-	for (var stat = 0; stat < e_inv_stats.last; stat++){
-		global.inv[slot, stat] = -1; 
-	}
-}
-*/
+// No-Nothing
 
 #endregion INVENTORY
