@@ -24,3 +24,4 @@ else if (image_index == 2) {
 	}
 }
 
+// ..........

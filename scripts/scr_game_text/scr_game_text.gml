@@ -13,6 +13,7 @@ switch(_text_id) {
 			// Dá o item
 			scr_text("Isso aqui vai te ajudar.");
 			scr_text("");
+			global.flag[5] = true;
 			break;	
 //------------------------------------ CONVERSATION 2 ----------------------------------------//
 		case "door":
@@ -20,11 +21,13 @@ switch(_text_id) {
 			break;
 //------------------------------------ CONVERSATION 3 ----------------------------------------//
 		case "painel1":
-			if (global.flag[8] == false) {
+			if (global.flag[6] == false) {
 				scr_text("Tzzzt.");
 			}
 
-			if (global.flag[8] == true) {
+			if (global.flag[6] == true) {
+				scr_text("Tzzzt!!");
+				global.flag[7] = true;
 				room_goto(rm_minigame);
 			}
 			break;
@@ -34,9 +37,11 @@ switch(_text_id) {
 				var _nome = obj_item.nome;
 				scr_text($"Voce encontrou um {_nome}!");
 				scr_text($"Voce guardou {_nome} no seu inventario.");
+				ds_grid_add_item(Armas.Drive, spr_items);
+				global.flag_counter++;
 				global.flag[0] = true;
 			}
-			ds_grid_add_item(Armas.Drive, spr_items);
+
 			scr_text("");
 			break;
 //------------------------------------ CONVERSATION 5 ----------------------------------------//
@@ -64,9 +69,10 @@ switch(_text_id) {
 				var _nome = obj_item.nome;
 				scr_text($"Voce encontrou um {_nome}!");
 				scr_text($"Voce guardou {_nome} no seu inventario.");
+				ds_grid_add_item(Armas.Disk, spr_items);
+				global.flag_counter++;
 				global.flag[1] = true;
 			}
-			ds_grid_add_item(Armas.Disk, spr_items);
 			scr_text("");
 			break;
 //------------------------------------ CONVERSATION 8 ----------------------------------------//
@@ -75,9 +81,10 @@ switch(_text_id) {
 				var _nome = obj_item.nome;
 				scr_text($"Voce encontrou um {_nome}!");
 				scr_text($"Voce guardou {_nome} no seu inventario.");
+				ds_grid_add_item(Armas.CD, spr_items);
+				global.flag_counter++;
 				global.flag[2] = true;
 			}
-			ds_grid_add_item(Armas.CD, spr_items);
 			scr_text("");
 			break;
 //------------------------------------ CONVERSATION 9 ----------------------------------------//
@@ -86,9 +93,10 @@ switch(_text_id) {
 				var _nome = obj_item.nome;
 				scr_text($"Voce encontrou um {_nome}!");
 				scr_text($"Voce guardou {_nome} no seu inventario.");
+				ds_grid_add_item(Armas.CD, spr_items);
+				global.flag_counter++;
 				global.flag[3] = true;
 			}
-			ds_grid_add_item(Armas.CD, spr_items);
 			scr_text("");
 			break;
 //--------------------------------------------------------------------------------------------//

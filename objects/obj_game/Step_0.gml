@@ -4,6 +4,33 @@ if (keyboard_check_pressed(ord("Q"))) {
 	global.debug = !global.debug;	
 }
 
+// FLAGS
+if (global.flag_counter >= 3) {
+	audio_play_sound(snd_static, 100, false);
+	
+	var npc_inst = instance_create_layer(423, 221, "InstancesBelow");
+	with (npc_inst) {
+		default_dialogue = "npc1";
+		has_speech_bubble = true;
+		show_speech_bubble = true;
+	}
+	global.flag_counter = -1;
+}
+
+if (global.flag[5]) {
+	if instance_exists(obj_announcement) instance_destroy(obj_announcement);
+	announcement = instance_create_layer(0, 0, "Instances", obj_announcement);
+	announcement.text = "Oh? Voce escuta um som de estatica logo ao lado...";
+	global.flag[5] = -1;
+	obj_monitor.activated = true;
+}
+
+// Hidden Stuff
+if (global.flag[10] && room == rm_second) {
+	global.flag[11] = true;	
+}
+
+
 /*
 // Pausing the world when textbox is active
 if (instance_exists(obj_dialog_box)) {

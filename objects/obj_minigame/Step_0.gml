@@ -19,6 +19,16 @@ if self.threat > 100
 
 if self.attempts < 0
 {
-	room_restart();	
+	// room_restart();	
+	
+	// Player lost...
+	global.flag[14] = true;
+	room_goto(rm_end);
+	
 }
 
+// Player won (??)
+if (obj_node.marked == true) {
+	global.flag[15] = true;
+	room_goto(rm_end);
+}
