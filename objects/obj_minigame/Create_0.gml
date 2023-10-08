@@ -9,7 +9,7 @@ difficulty = 1;
 timer_cond = true;
 attempts = 2;
 
-dt_value = 90
+dt_value = 95;
 nodes_array=[];
 
 scr_minigame();
