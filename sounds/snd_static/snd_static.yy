@@ -12,8 +12,8 @@
   "duration":1.927166,
   "name":"snd_static",
   "parent":{
-    "name":"Audio",
-    "path":"folders/Assets/Audio.yy",
+    "name":"SFX",
+    "path":"folders/Assets/Audio/SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -12,8 +12,8 @@
   "duration":0.078367,
   "name":"snd_select",
   "parent":{
-    "name":"Audio",
-    "path":"folders/Assets/Audio.yy",
+    "name":"SFX",
+    "path":"folders/Assets/Audio/SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

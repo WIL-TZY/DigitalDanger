@@ -12,8 +12,8 @@
   "duration":2.298776,
   "name":"snd_throw_away",
   "parent":{
-    "name":"Audio",
-    "path":"folders/Assets/Audio.yy",
+    "name":"SFX",
+    "path":"folders/Assets/Audio/SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -12,8 +12,8 @@
   "duration":0.496327,
   "name":"snd_shot",
   "parent":{
-    "name":"Audio",
-    "path":"folders/Assets/Audio.yy",
+    "name":"SFX",
+    "path":"folders/Assets/Audio/SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

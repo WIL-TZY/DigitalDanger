@@ -12,8 +12,8 @@
   "duration":1.697959,
   "name":"snd_enter",
   "parent":{
-    "name":"Audio",
-    "path":"folders/Assets/Audio.yy",
+    "name":"SFX",
+    "path":"folders/Assets/Audio/SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

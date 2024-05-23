@@ -1,2 +1,2 @@
-audio_pause_sound(snd_title);
+audio_pause_sound(mus_title);
 

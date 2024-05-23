@@ -6,4 +6,4 @@ timer = 0;
 time_till_appear = 120;
 time_till_destroy = 400;
 
-//text = "";
+text = "";

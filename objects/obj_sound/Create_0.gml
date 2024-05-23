@@ -1,2 +1,2 @@
-audio_play_sound(snd_theme1, 10, true);
+audio_play_sound(mus_theme, 10, true);
 
