@@ -60,10 +60,10 @@ global.PRESSED_UP = false;
 global.PRESSED_DOWN = false;
 global.PRESSED_LEFT = false;
 global.PRESSED_RIGHT = false;
-global.PRESSED_CONFIRM = false;	//"Z"
-global.PRESSED_CANCEL = false;	//"X"
-global.PRESSED_SELECT = false;	//registered item ("V" or SPACE)
-global.PRESSED_START = false;	//menu ("C" or ENTER)
+global.PRESSED_CONFIRM = false;	//"Z" (or SPACE)
+global.PRESSED_CANCEL = false;	//"X" (or BACKSPACE)
+global.PRESSED_START = false;	// Menu ("C" or ENTER)
+global.PRESSED_SELECT = false;	// Attack ("V", SHIFT)
 //released
 global.RELEASED_UP = false;
 global.RELEASED_DOWN = false;

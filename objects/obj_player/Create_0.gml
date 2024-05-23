@@ -1,23 +1,19 @@
 // Inherit the parent event
 event_inherited();
 
-// Depth Sorting
-SetDepth(0); // Determines DepthID of each instance
-
-visible = true;
-//active = false;
-				
-is_player = true;
-moving = false;
-
 // Variable definitions
 // move_direction = 270;
 // sprite_offset = 8;
-player_data = new char_data();
 
-state = player_data.states.idle;
+visible = true;
 
-facing = DOWN;
-
-// To start idle
+// Disables automatic animation
 image_speed = 0;
+h_speed = 0;
+v_speed = 0;
+speed_walk = 2.0;
+
+npc_inst = noone;
+
+// Depth Sorting
+SetDepth(0); // Determines DepthID of each instance
