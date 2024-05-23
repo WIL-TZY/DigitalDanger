@@ -27,7 +27,7 @@
   "origin":0,
   "parent":{
     "name":"minigames",
-    "path":"folders/Sprites/minigames.yy",
+    "path":"folders/Assets/Sprites/minigames.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

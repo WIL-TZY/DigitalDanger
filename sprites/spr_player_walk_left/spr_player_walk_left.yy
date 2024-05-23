@@ -29,7 +29,7 @@
   "origin":9,
   "parent":{
     "name":"walk",
-    "path":"folders/Sprites/player/walk.yy",
+    "path":"folders/Assets/Sprites/player/walk.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

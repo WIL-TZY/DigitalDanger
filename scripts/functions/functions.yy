@@ -6,7 +6,7 @@
   "name":"functions",
   "parent":{
     "name":"Inventory",
-    "path":"folders/Inventory.yy",
+    "path":"folders/Systems/Inventory.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -15,7 +15,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Title (old)",
-    "path":"folders/Title (old).yy",
+    "path":"folders/Systems/UI/Title (old).yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"expressions",
-    "path":"folders/Sprites/player/expressions.yy",
+    "path":"folders/Assets/Sprites/player/expressions.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

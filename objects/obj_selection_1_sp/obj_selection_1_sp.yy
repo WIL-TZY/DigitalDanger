@@ -11,7 +11,7 @@
   ],
   "parent":{
     "name":"TitleMenu",
-    "path":"folders/TitleMenu.yy",
+    "path":"folders/Systems/UI/TitleMenu.yy",
   },
   "parentObjectId":{
     "name":"obj_menu_parent",

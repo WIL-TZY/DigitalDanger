@@ -216,7 +216,7 @@
   "name":"font_game",
   "parent":{
     "name":"Fonts",
-    "path":"folders/Fonts.yy",
+    "path":"folders/Assets/Fonts.yy",
   },
   "pointRounding":1,
   "ranges":[

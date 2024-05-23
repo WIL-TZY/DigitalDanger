@@ -6,7 +6,7 @@
   "name":"scr_menu",
   "parent":{
     "name":"TitleMenu",
-    "path":"folders/TitleMenu.yy",
+    "path":"folders/Systems/UI/TitleMenu.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

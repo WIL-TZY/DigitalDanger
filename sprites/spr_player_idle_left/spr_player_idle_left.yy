@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"idle",
-    "path":"folders/Sprites/player/idle.yy",
+    "path":"folders/Assets/Sprites/player/idle.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

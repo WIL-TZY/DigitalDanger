@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"backgrounds",
-    "path":"folders/Sprites/backgrounds.yy",
+    "path":"folders/Assets/Sprites/backgrounds.yy",
   },
   "parentObjectId":null,
   "persistent":false,

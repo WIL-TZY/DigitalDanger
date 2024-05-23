@@ -4,7 +4,7 @@
   "name":"Note1",
   "parent":{
     "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "path":"folders/Assets/Sprites.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

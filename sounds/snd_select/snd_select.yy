@@ -13,7 +13,7 @@
   "name":"snd_select",
   "parent":{
     "name":"Audio",
-    "path":"folders/Audio.yy",
+    "path":"folders/Assets/Audio.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

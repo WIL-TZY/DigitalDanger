@@ -120,7 +120,7 @@
   "origin":0,
   "parent":{
     "name":"fonts",
-    "path":"folders/Sprites/fonts.yy",
+    "path":"folders/Assets/Sprites/fonts.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

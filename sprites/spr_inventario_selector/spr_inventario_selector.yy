@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"spr_inv",
-    "path":"folders/Inventory/spr_inv.yy",
+    "path":"folders/Systems/Inventory/spr_inv.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

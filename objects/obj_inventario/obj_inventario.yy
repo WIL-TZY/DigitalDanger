@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Inventory",
-    "path":"folders/Inventory.yy",
+    "path":"folders/Systems/Inventory.yy",
   },
   "parentObjectId":null,
   "persistent":true,

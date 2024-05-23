@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"room_props",
-    "path":"folders/Sprites/room_props.yy",
+    "path":"folders/Assets/Sprites/room_props.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
