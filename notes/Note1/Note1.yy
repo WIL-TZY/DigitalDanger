@@ -3,8 +3,8 @@
   "%Name":"Note1",
   "name":"Note1",
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Assets/Sprites.yy",
+    "name":"DigitalDanger",
+    "path":"DigitalDanger.yyp",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",
