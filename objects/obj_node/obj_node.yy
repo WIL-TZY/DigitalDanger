@@ -11,8 +11,8 @@
   "name":"obj_node",
   "overriddenProperties":[],
   "parent":{
-    "name":"minigame_elements",
-    "path":"folders/Objects/minigame_elements.yy",
+    "name":"Minigame Elements",
+    "path":"folders/Objects/Minigame Elements.yy",
   },
   "parentObjectId":null,
   "persistent":false,

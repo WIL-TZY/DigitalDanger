@@ -45,14 +45,10 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_npc_parent","path":"objects/obj_npc_parent/obj_npc_parent.yy",},"propertyId":{"name":"show_speech_bubble","path":"objects/obj_npc_parent/obj_npc_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":280.0,"y":217.0,},
       ],"layers":[],"name":"InstancesBelow","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRTileLayer":"","%Name":"Collision","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Collision","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":15,"SerialiseWidth":20,"TileCompressedData":[
-          -41,-2147483648,1,0,-16,1,-2,0,1,-2147483648,-4,1,7,-2147483648,1,1,-2147483648,1,1,-2147483648,-3,1,
-          1,0,-3,1,4,-2147483648,1,1,0,-13,-2147483648,-2,0,2,1,-2147483648,-3,0,-13,-2147483648,-2,0,1,1,-3,-2147483648,
-          1,0,-13,-2147483648,-2,0,1,1,-3,-2147483648,1,0,-13,-2147483648,-2,0,1,1,-3,-2147483648,1,0,-13,-2147483648,
-          -2,0,2,1,-2147483648,-3,0,-13,-2147483648,-2,0,5,1,-2147483648,1,1,0,-13,-2147483648,-2,0,5,1,-2147483648,
-          -2147483648,1,0,-12,-2147483648,-3,0,4,1,-2147483648,-2147483648,1,-16,0,9,1,-2147483648,-2147483648,
-          1,-2147483648,-2147483648,0,-2147483648,-2147483648,-6,0,-4,-2147483648,-2,1,-3,-2147483648,-7,1,1,0,
-          -8,1,-2,-2147483648,
+    {"$GMRTileLayer":"","%Name":"Collision","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Collision","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":16,"TileCompressedData":[
+          -33,-2147483648,1,0,-14,1,1,-2147483648,-4,1,7,-2147483648,1,1,-2147483648,1,1,-2147483648,-3,1,4,0,
+          1,1,0,-13,-2147483648,-3,0,-15,-2147483648,1,0,-15,-2147483648,1,0,-15,-2147483648,1,0,-13,-2147483648,
+          -3,0,-13,-2147483648,-2,1,1,0,-14,-2147483648,2,1,0,-12,-2147483648,1,0,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_col","path":"tilesets/ts_col/ts_col.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"TilesAlt2","depth":400,"effectEnabled":true,"effectType":null,"gridX":20,"gridY":20,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"TilesAlt2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":15,"SerialiseWidth":20,"TileCompressedData":[-76,-2147483648,-2,16,-210,-2147483648,3,2,0,2,-9,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"ts_city_expand","path":"tilesets/ts_city_expand/ts_city_expand.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"TilesAlt","depth":500,"effectEnabled":true,"effectType":null,"gridX":20,"gridY":20,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"TilesAlt","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":15,"SerialiseWidth":20,"TileCompressedData":[

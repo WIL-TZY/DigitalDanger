@@ -53,8 +53,8 @@
   },
   "origin":7,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Assets/Sprites.yy",
+    "name":"Room Props",
+    "path":"folders/Assets/Sprites/Room Props.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

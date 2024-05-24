@@ -8,7 +8,7 @@
 #macro TILE_WIDTH 16
 #macro TILE_HEIGHT 16
 #macro NUMBER_OF_DIRECTIONS 4
-#macro FRAME_RATE 30
+#macro FRAME_RATE 60
 
 // Directions
 #macro RIGHT 0

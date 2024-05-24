@@ -9,8 +9,8 @@
   "name":"obj_parallax_background",
   "overriddenProperties":[],
   "parent":{
-    "name":"backgrounds",
-    "path":"folders/Assets/Sprites/backgrounds.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

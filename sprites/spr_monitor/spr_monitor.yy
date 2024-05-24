@@ -32,8 +32,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"room_props",
-    "path":"folders/Assets/Sprites/room_props.yy",
+    "name":"Room Props",
+    "path":"folders/Assets/Sprites/Room Props.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

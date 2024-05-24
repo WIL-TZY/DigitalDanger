@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_digital",
-    "path":"sprites/spr_digital/spr_digital.yy",
+    "name":"spr_logo",
+    "path":"sprites/spr_logo/spr_logo.yy",
   },
   "spriteMaskId":null,
   "visible":true,
