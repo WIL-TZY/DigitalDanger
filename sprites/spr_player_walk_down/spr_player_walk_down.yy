@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"walk",
-    "path":"folders/Assets/Sprites/player/walk.yy",
+    "name":"Old",
+    "path":"folders/Assets/Sprites/Player/Old.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

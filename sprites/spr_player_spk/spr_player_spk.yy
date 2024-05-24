@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"expressions",
-    "path":"folders/Assets/Sprites/player/expressions.yy",
+    "name":"Expressions",
+    "path":"folders/Assets/Sprites/Player/Expressions.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

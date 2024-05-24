@@ -1,3 +1,4 @@
+
 function char_data() constructor {
 	#region STATES
 

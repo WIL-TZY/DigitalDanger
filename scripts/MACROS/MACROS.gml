@@ -7,6 +7,8 @@
 #macro GRID_SIZE 16
 #macro TILE_WIDTH 16
 #macro TILE_HEIGHT 16
+#macro NUMBER_OF_DIRECTIONS 4
+#macro FRAME_RATE 30
 
 // Directions
 #macro RIGHT 0
