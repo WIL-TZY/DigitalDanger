@@ -38,7 +38,7 @@
   ],
   "name":"spr_player_walk",
   "nineSlice":null,
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"Player",
     "path":"folders/Assets/Sprites/Player.yy",
@@ -136,7 +136,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":9,
-    "yorigin":35,
+    "yorigin":24,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

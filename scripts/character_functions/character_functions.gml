@@ -1,36 +1,73 @@
 // Check for collision (Tilemap Collision System)
 function _player_collision() {
 	var col = false;
+  
+	// ------------------ Horizontal Tiles ------------------ //
 	
-	// Horizontal Tiles
-	if (tilemap_get_at_pixel(collision_map, x + h_speed, y)) {
-		// Left tile
-		x -= x mod TILE_SIZE;	
+	// RIGHT
+	if (sign(h_speed) == 1) {
+		if (tilemap_get_at_pixel(collision_map, x + h_speed + offset_h, y)) {
+			// Check collision
+			x -= x mod TILE_SIZE;	
+			
+			// Adjust positioning to grid
+			x += TILE_SIZE - 1 - offset_h;
+			
+			// Stop movement
+			h_speed = 0;
+			col = true;
+		}
+	}
 		
-		// Right tile
-		if (sign(h_speed) == 1) x += TILE_SIZE - 1;
-		
-		// Stop movement
-		h_speed = 0;
-		col = true;
+	// LEFT
+	if (sign(h_speed) == -1) {
+		if (tilemap_get_at_pixel(collision_map, x + h_speed - offset_h, y)) {
+			// Check collision
+			x -= x mod TILE_SIZE;
+			
+			// Adjust positioning to grid
+			x += offset_h;
+			
+			// Stop movement
+			h_speed = 0;
+			col = true;
+		}
 	}
 	
 	// Horizontal Move Commit
 	x += h_speed;
 	
-	// Vertical Tiles
-	if (tilemap_get_at_pixel(collision_map, x, y + v_speed)) {
-		// Top tile
-		y -= y mod TILE_SIZE;	
-		
-		// Bottom tile
-		if (sign(v_speed) == 1) y += TILE_SIZE - 1;
-		
-		// Stop movement
-		v_speed = 0;
-		col = true;
+	// ------------------ Vertical Tiles ------------------ //
+
+	// DOWN
+	if (sign(v_speed) == 1) {
+	  if (tilemap_get_at_pixel(collision_map, x, y + v_speed + offset_v)) {
+	    // Check collision
+	    y -= y mod TILE_SIZE;
+
+	    // Adjust positioning to grid
+	    y += TILE_SIZE - 1 - offset_v;
+
+	    // Stop movement
+	    v_speed = 0;
+	    col = true;
+	  }
 	}
-	
+
+	// UP
+	if (sign(v_speed) == -1) {
+	  if (tilemap_get_at_pixel(collision_map, x, y + v_speed)) {
+	    // Check collision
+	    y -= y mod TILE_SIZE;
+
+	    // No need to adjust positioning to grid when colliding north
+
+	    // Stop movement
+	    v_speed = 0;
+	    col = true;
+	  }
+	}
+
 	// Vertical Move Commit
 	y += v_speed;
 	

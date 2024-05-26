@@ -26,10 +26,13 @@ v_speed = lengthdir_y(input_magnitude * speed_walk, input_direction);
 // Check for collision before moving
 _player_collision();
 
-
 // Moving
-//x += h_speed;
-//y += v_speed;
+/*
+if (!col) {
+	x += h_speed;
+	y += v_speed;
+} 
+*/
 
 #endregion Movement
 
