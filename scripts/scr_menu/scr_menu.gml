@@ -44,7 +44,7 @@ function scr_menu_keyboard()
 					
 					if (position_meeting(self.x,self.y,obj_selection_1_sp) and global.PRESSED_CONFIRM)
 					{
-					room_goto(rm_first);
+					room_goto(rm_1);
 					}
 				
 				break;
