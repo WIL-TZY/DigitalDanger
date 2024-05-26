@@ -22,8 +22,15 @@ input_magnitude = (key_right - key_left != 0) || (key_down - key_up != 0);
 h_speed = lengthdir_x(input_magnitude * speed_walk, input_direction);
 v_speed = lengthdir_y(input_magnitude * speed_walk, input_direction);
 
-x += h_speed;
-y += v_speed;
+
+// Check for collision before moving
+_player_collision();
+
+
+// Moving
+//x += h_speed;
+//y += v_speed;
+
 #endregion Movement
 
 #region Animation

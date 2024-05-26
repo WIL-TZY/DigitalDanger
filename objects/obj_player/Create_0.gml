@@ -1,9 +1,11 @@
 // Inherit the parent event
-event_inherited();
+//event_inherited();
 
 // Variable definitions
 // move_direction = 270;
 // sprite_offset = 8;
+
+collision_map = layer_tilemap_get_id(layer_get_id("Collision"));
 
 visible = true;
 

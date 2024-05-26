@@ -1,10 +1,10 @@
 if (global.debug) {
 		if (npc_inst != noone) {
 		
-				var start_x = npc_inst.x - GRID_SIZE/2;
-				var end_x = start_x + GRID_SIZE;
-				var start_y = npc_inst.y + GRID_SIZE/2;
-				var end_y = start_y - GRID_SIZE;
+				var start_x = npc_inst.x - TILE_SIZE/2;
+				var end_x = start_x + TILE_SIZE;
+				var start_y = npc_inst.y + TILE_SIZE/2;
+				var end_y = start_y - TILE_SIZE;
 	
 	
 			draw_set_color(c_purple);

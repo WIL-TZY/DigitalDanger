@@ -4,9 +4,10 @@
 // No matter the resolution, the screen's width and height will keep between 320 width and 240 height
 #macro SCREEN_WIDTH 320
 #macro SCREEN_HEIGHT 240
-#macro GRID_SIZE 16
-#macro TILE_WIDTH 16
-#macro TILE_HEIGHT 16
+#macro SCREEN_SCALE 4
+#macro TILE_SIZE 20
+#macro TILE_WIDTH 20
+#macro TILE_HEIGHT 20
 #macro NUMBER_OF_DIRECTIONS 4
 #macro FRAME_RATE 60
 

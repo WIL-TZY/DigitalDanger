@@ -5,6 +5,12 @@
 // Feel free to comment it for debugging purposes
 randomize();
 
+// Resize GUI
+// display_set_gui_size(display_get_width(), display_get_height());
+// show_debug_message("Display Width: " + string(display_get_width()) + "\nDisplay Height: " + string(display_get_height()));
+
+// Switch the GUI from using Viewport coordinates to using Window coordinates
+display_set_gui_maximize(SCREEN_SCALE, SCREEN_SCALE, 0, 0);
 
 #region GAME VARIABLES
 global.pause = false;

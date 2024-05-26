@@ -1,45 +1,39 @@
-
-function char_data() constructor {
-	#region STATES
-
-		states = {
-			idle: {
-				left:	spr_player_idle_left,
-				right:	spr_player_idle_right,
-				up:		spr_player_idle_up,
-				down:	spr_player_idle_down
-			},
+// Check for collision (Tilemap Collision System)
+function _player_collision() {
+	var col = false;
 	
-			walk: {
-				left:	spr_player_walk_left,
-				right:	spr_player_walk_right,
-				up:		spr_player_walk_up,
-				down:	spr_player_walk_down
-			}			
-		}
-
-	#endregion STATES
-}
-
-//changing sprites in ALL characters that inherit from this
-function get_chara_sprite(_char, _dir) { // Also set as method variable called get_sprite() inside obj_character parent (for NPCs)
-	if (_dir == 0) return _char.state.right;
-	else if (_dir == 90) return _char.state.up;
-	else if (_dir == 180) return _char.state.left;
-	else if (_dir == 270) return _char.state.down;
-
-	// Returning chara's current sprite for safety reasons
-	return sprite_index; // This only runs if _dir was invalid for some reason
-}
-
-//changing from idle state to move state and vice versa
-function set_chara_state(new_state) { // Also set as method variable called set_sprite() inside obj_character parent (for NPCs)
-	if (state == new_state) return; // If chara is already using the given state the function ends
+	// Horizontal Tiles
+	if (tilemap_get_at_pixel(collision_map, x + h_speed, y)) {
+		// Left tile
+		x -= x mod TILE_SIZE;	
+		
+		// Right tile
+		if (sign(h_speed) == 1) x += TILE_SIZE - 1;
+		
+		// Stop movement
+		h_speed = 0;
+		col = true;
+	}
 	
-	state = new_state;
+	// Horizontal Move Commit
+	x += h_speed;
 	
-	// Resetting subimage for the sprite when the state changes so the anim plays from the beginning
-	image_index = 0; 
+	// Vertical Tiles
+	if (tilemap_get_at_pixel(collision_map, x, y + v_speed)) {
+		// Top tile
+		y -= y mod TILE_SIZE;	
+		
+		// Bottom tile
+		if (sign(v_speed) == 1) y += TILE_SIZE - 1;
+		
+		// Stop movement
+		v_speed = 0;
+		col = true;
+	}
+	
+	// Vertical Move Commit
+	y += v_speed;
+	
+	
+	return col;
 }
-
-
